@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Portfolio - Frontend and Backend Projects">
+    <title>My Portfolio | Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h2>Portfolio</h2>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="profile-image-container">
+                    <img src="https://via.placeholder.com/200?text=Your+Photo" alt="Profile Picture" class="profile-image">
+                </div>
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Rosine</span></h1>
+                <p class="hero-subtitle">Full Stack Developer</p>
+                <p class="hero-description">
+                    Passionate about building modern web apps with React.js and Node.js.
+                    I love crafting seamless front-end experiences and robust back-end solutions, while exploring DevOps and deployment.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/Rosine22" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/your-profile" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:your.email@example.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate full-stack developer building scalable web applications with modern technologies.
+                        I enjoy solving complex problems and learning new technologies.
+                    </p>
+                    <p>
+                        Currently working on building scalable full-stack web applications and exploring DevOps pipelines and cloud deployment.
+                        I'm always looking to collaborate on open-source projects in full-stack development and web apps using React.js and Node.js.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">React.js</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">HTML</span>
+                        <span class="skill-item">CSS</span>
+                        <span class="skill-item">Tailwind CSS</span>
+                        <span class="skill-item">Redux</span>
+                        <span class="skill-item">Context API</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Node.js</span>
+                        <span class="skill-item">Express</span>
+                        <span class="skill-item">REST APIs</span>
+                        <span class="skill-item">GraphQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> DevOps & Tools</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">GitHub</span>
+                        <span class="skill-item">Docker</span>
+                        <span class="skill-item">CI/CD</span>
+                        <span class="skill-item">VS Code</span>
+                        <span class="skill-item">npm</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Global Skills Bridge -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <img src="images/globb.PNG" alt="Global Skills Bridge">
+                        <div class="project-overlay">
+                            <a href="https://global-skills-b.netlify.app/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Rosine22/Global-Skill-Bridges" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Global Skills Bridge</h3>
+                        <p>A platform connecting learners with global skill development opportunities and resources.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Full Stack</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TaskFlow DevOps -->
+                <div class="project-card" data-category="backend">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250?text=TaskFlow+DevOps" alt="TaskFlow DevOps">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Rosine22/TaskFlow-DevOps" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>TaskFlow DevOps</h3>
+                        <p>DevOps pipeline implementation with CI/CD automation and containerization for task management workflows.</p>
+                        <div class="project-tags">
+                            <span class="tag">DevOps</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ToDo App -->
+                <div class="project-card todo-app-card" data-category="frontend">
+                    <div class="project-image">
+                        <img src="images/todo.PNG" alt="ToDo App">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Rosine22/ToDo-app" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>ToDo App</h3>
+                        <p>An interactive task management application with CRUD operations and local storage persistence.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dental Practice Clone -->
+                <div class="project-card dental-app-card" data-category="frontend">
+                    <div class="project-image">
+                        <img src="images/dental practice.PNG" alt="Dental Practice Clone">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Rosine22/dental-practice-clone" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Dental Practice Clone</h3>
+                        <p>A professional dental practice website clone with modern UI/UX design and responsive layout.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Restaurant Website -->
+                <div class="project-card restaurant-app-card" data-category="frontend">
+                    <div class="project-image">
+                        <img src="images/resto.PNG" alt="Restaurant Website">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Rosine22/Restaurant" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Restaurant Website</h3>
+                        <p>An elegant restaurant website featuring menu showcase, online reservations, and gallery sections.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Project 1 -->
+                <div class="project-card" data-category="backend">
+                    <div class="project-image">
+                        <img src="images/den2.PNG" alt="Backend Project 1">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>REST API Server</h3>
+                        <p>Scalable REST API with JWT authentication, rate limiting, and comprehensive documentation.</p>
+                        <div class="project-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Project 2 -->
+                <div class="project-card" data-category="backend">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250?text=Backend+Project+2" alt="Backend Project 2">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Management System</h3>
+                        <p>Backend system for task management with real-time updates using WebSockets.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Full Stack Project 1 -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250?text=Full+Stack+Project" alt="Full Stack Project">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Social Media Platform</h3>
+                        <p>Full-stack social media application with user authentication, posts, and real-time chat.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Socket.io</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Work Together</h3>
+                    <p>I'm always interested in collaborating on open-source projects and hearing about new opportunities in full-stack development.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>uwinezarosine16@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <span>github.com/Rosine22</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn Profile</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Rosine. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/Rosine22" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
