@@ -267,6 +267,89 @@ section {
     margin-bottom: 1rem;
 }
 
+/* ===== EDUCATION SECTION ===== */
+.education {
+    background-color: var(--bg-color);
+}
+
+.education-timeline {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.education-timeline::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, #1e3a8a, #3b82f6);
+}
+
+.education-item {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.education-icon {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: var(--shadow);
+    z-index: 1;
+}
+
+.education-content {
+    flex: 1;
+    background-color: var(--bg-secondary);
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.education-content:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+.education-content h3 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.education-content h4 {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.education-specialization {
+    font-style: italic;
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+}
+
+.education-description {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-light);
+}
+
 /* ===== SKILLS SECTION ===== */
 .skills-grid {
     display: grid;
@@ -621,6 +704,32 @@ section {
 
     .section-title {
         font-size: 2rem;
+    }
+
+    .education-timeline::before {
+        left: 15px;
+    }
+
+    .education-item {
+        gap: 1rem;
+    }
+
+    .education-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+
+    .education-content {
+        padding: 1.2rem 1.5rem;
+    }
+
+    .education-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .education-content h4 {
+        font-size: 1rem;
     }
 
     .projects-grid {
